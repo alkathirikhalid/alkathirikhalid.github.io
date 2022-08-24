@@ -192,8 +192,28 @@ $(document).ready(function() {
 	
 });
 
+var myAgent;
+var elaborated = false;
+var concluded = false;
+
 function init(){
 	document.getElementsByTagName("currentyear")[0].innerHTML = new Date().getFullYear();
+	clippy.load('Bonzi', function(agent) {
+        agent.show();
+		agent.speak('Welcome one, welcome all.');
+		myAgent = agent;
+	});
+}
+
+function entertain(){
+	myAgent.animate();
+}
+
+function elaborate(){
+	if (!elaborated){
+		myAgent.gestureAt(0,0);
+		elaborated = true;
+	}
 }
 
 function more(){
@@ -206,4 +226,11 @@ function more(){
     dots.innerHTML = "»"; 
     more.style.display = "none";
   }
+}
+
+function exit(){
+	if (!concluded){
+	myAgent.hide();
+	concluded = true;
+	}
 }
