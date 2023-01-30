@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define([],function(){function r(e){this.name="ArgumentError",this.message=e,this.stack=(new Error).stack||"No stack trace available."}return r.createInstance=function(e){return new r(e)},r.prototype=new Error,r});

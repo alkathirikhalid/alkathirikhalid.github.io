@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define(["jquery","to-markdown","pagedown-converter","pagedown-sanitizer","dialogBox","resourceManager","argumentNullError","stringHelper"],function($,t,n,r,o,e,i,a){function l(){}return l.toHtml=function(n){return Markdown.getSanitizingConverter().makeHtml(n)},l.showAsHtml=function(n){n=l.toHtml(n);o.showHtml(n,e.getString("General_Dialogbox_MarkdownToHtml_Title"))},l.toMarkdown=function(n){return t(n)},l});

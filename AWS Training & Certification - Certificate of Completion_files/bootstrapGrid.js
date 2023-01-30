@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define(["jquery","jqueryHelper","stringHelper","argumentNullError","argumentError"],function($,n,i,e,t){function r(){}return r.initializeAll=function(){r.initializeEqualHeightGrid()},r.initializeEqualHeightGrid=function(){var i,e=n.select(".container-fluid.kiku-row-equal-height div.kiku-grid-cell");e.each(function(){$(this).css("padding","20px")}),i=e.map(function(){return $(this).height()}).get(),i=Math.max.apply(null,i),e.height(i)},r});

@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define(["argumentNullError"],function(a){return function(n,t,c){if(null==n)throw new a.createInstance("callbackFunction");if(null==t)throw new a.createInstance("callbackContext");this.callbackFunction=n,this.callbackContext=t,this.data=c}});

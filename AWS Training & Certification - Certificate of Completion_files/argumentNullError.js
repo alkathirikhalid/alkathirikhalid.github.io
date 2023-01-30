@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define([],function(){function r(e){var r=new Error;e=null==e||""===e.trim()?"Parameter":"'"+e+"'",this.name="ArgumentNullError",this.message=e+" is null, empty or undefined.",this.stack=r.stack||"No stack trace available."}return r.createInstance=function(e){return new r(e)},r.prototype=new Error,r});

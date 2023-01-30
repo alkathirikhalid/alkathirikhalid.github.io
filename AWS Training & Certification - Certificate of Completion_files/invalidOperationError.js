@@ -1,0 +1,2 @@
+/** Copyright 2023 Amazon.com Inc. or its affiliates. All Rights Reserved. **/
+define([],function(){function e(r){var e=new Error;this.name="InvalidOperationError",this.message=r,this.stack=e.stack||"No stack trace available."}return e.createInstance=function(r){return new e(r)},e.prototype=new Error,e});
